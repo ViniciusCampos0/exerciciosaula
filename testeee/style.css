@@ -1,0 +1,28 @@
+* {
+                /* margin: 0;
+                padding: 0; */
+                /* box-sizing: border-box; */
+}
+
+
+
+h1 {
+                text-align: center;
+}
+
+.buttons-semana {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+}
+
+.buttons-semana button {
+                background-color: rgb(48, 220, 0);
+                color: white;
+                border-radius: 10px;
+                border-style: none;
+                padding: 10px;
+                width: auto;
+                height: 50px;
+}

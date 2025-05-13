@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      function fome() {
+        let nivelDeFome = prompt("Me diga seu nível de fome entre 0, 1 e 2:");
+
+        if (nivelDeFome == 0) {
+          alert("Você está sem fome, agurarde a próxima refeição.");
+        } else if (nivelDeFome == 1) {
+          alert("Você está com pouca fome, faça uma refeição leve.");
+        } else if (nivelDeFome == 2) {
+          alert("Você está com muita fome, faça uma refeição completa.");
+        }
+      }
+      window.onload = fome;
+    </script>
+  </body>
+</html>

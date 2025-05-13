@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      function diaDaSemana() {
+        let dia = prompt(
+          "Qual dia da semana você prefere, segunda, terça, quarta quinta ou sexta?"
+        );      
+
+        switch (dia) {
+          case "segunda":
+            alert("Dia de começar a semana com energia!");
+            break;
+          case "terça":
+            console.log("Hora de aprender coisas novas!");
+            break;
+          case "quarta":
+            alert("Metade da semana, continue firme!");
+            break;
+          case "quinta":
+            console.log("Quase lá, um pouco maais de esforço!");
+            break;
+          case "sexta":
+            alert("Dia de comemorar, o fim de semana está chegando!");
+            break;
+          default:
+            console.log("Final de semana! Descanse e divirta-se");
+        }
+
+      }
+       window.onload = diaDaSemana;
+    </script>
+  </body>
+</html>
