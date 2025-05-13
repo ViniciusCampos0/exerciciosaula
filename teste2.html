@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Alert</title>
+</head>
+
+<script>
+    function limitarNota(nota) {
+        let n;
+        do {
+            n = parseFloat(prompt(`Digite a nota ${nota} (entre 0 e 10):`));
+        } while (isNaN(n) || n < 0 || n > 10);
+        return n;
+    }
+
+    function solicitarNota() {
+        let n1 = limitarNota(1);
+        let n2 = limitarNota(2);
+        let n3 = limitarNota(3);
+        let n4 = limitarNota(4);
+
+        let media = (n1 + n2 + n3 + n4) / 4;
+        alert("A média final é: " + media.toFixed(2));
+    }
+</script>
+
+<body onload="solicitarNota()">
+</body>
+</html>
